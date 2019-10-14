@@ -20,14 +20,25 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section class="main_bio">
-        <h2>Contact Info</h2>
-        <h6>Name</h6>
-        <h6>Email</h6>
-        <h6>Comments</h6>
-
-
-
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact</h2>
+            <p>Please fill in your information below and let me know your thoughts on the website!</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" paceholder="Jo-Jo Joseph">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="blahblah@blah.com">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" placeholder="Comments for Triston..." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
     </section>
     <footer>
         <p>Copyright</p>
