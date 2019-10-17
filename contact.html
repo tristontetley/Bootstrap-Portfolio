@@ -5,49 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/portfolio.css">
 
 </head>
 
 <body>
     <header>
-        <h1>Triston Tetley</h1>
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-                <a href="index.html"><button class="btn btn-sm btn-outline-secondary" type="button">About</button></a>
-                <a href="portfolio.html"><button class="btn btn-sm btn-outline-secondary"
-                        type="button">Portfolio</button></a>
-                <a href="contact.html"><button class="btn btn-sm btn-outline-secondary"
-                    type="button">Contact</button></a>
-            </form>
-        </nav>
-    </header>
-    <div class="container">
-        <div style="text-align:center">
-            <h2>Contact</h2>
-            <p>Please fill in your information below and let me know your thoughts on the website!</p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <form action="/action_page.php">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" paceholder="Jo-Jo Joseph">
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" placeholder="blahblah@blah.com">
-                    <label for="comment">Comment</label>
-                    <textarea id="comment" placeholder="Comments for Triston..." style="height:170px"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </div>
-    </section>
-    <footer>
-        <p>Copyright</p>
-    </footer>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Triston</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="blahblah@blah.com">
+                <small id="emailHelp" class="form-text text-muted">Your e-mail will be secured and inaccesible to third
+                    parties when entered.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Please leave comment/concerns below!</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    </div>
+    <footer>
+        <div class="footer-copyright text-center py-3"><small>Copyright &copy;</small>
+        </div>
+    </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>
